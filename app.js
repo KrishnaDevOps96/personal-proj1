@@ -37,6 +37,6 @@ app.delete('/users/:id', (req, res) => {
   res.json(deletedUser);
 });
 
-app.listen(port, () => {
-  console.log(`App running at http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`App running at http://0.0.0.0:${port}`);
 });
